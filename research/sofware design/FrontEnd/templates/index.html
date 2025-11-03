@@ -1,0 +1,71 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uzziah</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<div class="tac-hud">
+<header class="topbar">
+<div class="left">
+<div class="mission">OPERATION UZZIAH1.0</div>
+<!-- <div class="sub">mark1</div> -->
+</div>
+<div class="right">
+<div class="status">STATUS: <span class="dot online"></span> ONLINE</div>
+</div>
+</header>
+
+
+<main class="main">
+<section class="viewer">
+<div id="live-box" class="live-box">
+<div class="scan-overlay"></div>
+<div class="static-placeholder">LIVE FEED WILL GO HERE</div>
+<div class="hud-frame">
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+</div>
+</div>
+
+
+<div class="viewer-aux">
+<div class="coords">LAT: ---, LON: ---</div>
+<div class="clock" id="clock">--:--:--</div>
+</div>
+</section>
+
+
+<aside class="panel">
+<div class="panel-block">
+<div class="title">TRACKED OBJECTS</div>
+<ul id="targets" class="targets"><li>— no tracks —</li></ul>
+</div>
+
+
+<div class="panel-block">
+<div class="title">COMMANDS</div>
+<button id="neutralize-btn" class="btn critical">NEUTRALIZE</button>
+<button id="status-btn" class="btn">SYSTEM STATUS</button>
+</div>
+
+
+<div class="panel-block mini">
+<div class="title">RADAR</div>
+</div>
+</aside>
+</main>
+
+
+<footer class="bottombar">Prototype UI — Not for operational use</footer>
+</div>
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>

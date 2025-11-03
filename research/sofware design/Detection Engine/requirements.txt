@@ -1,0 +1,2 @@
+# requirements cleared per user request
+# To restore, add dependencies such as torch, opencv-python, numpy, Flask, etc.
