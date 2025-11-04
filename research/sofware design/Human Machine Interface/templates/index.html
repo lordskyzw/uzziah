@@ -23,15 +23,18 @@
 <main class="main">
 <section class="viewer">
 <div id="live-box" class="live-box">
-<div class="scan-overlay"></div>
-<div class="static-placeholder">LIVE FEED WILL GO HERE</div>
-<div class="hud-frame">
-<div class="corner tl"></div>
-<div class="corner tr"></div>
-<div class="corner bl"></div>
-<div class="corner br"></div>
+    <div class="scan-overlay"></div>
+    <div class="static-placeholder">LIVE FEED WILL GO HERE</div>
+    <img id="video-stream" style="width:100%; height:100%; object-fit:cover; display:none;">
+    <div class="hud-frame">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+    </div>
 </div>
-</div>
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script src="/static/script.js"></script>
 
 
 <div class="viewer-aux">
