@@ -1,7 +1,7 @@
 flask
 flask-socketio
 opencv-python
-inference-gpu
+inference-cpu
 trackers
-supervision==0.27.0rc1
+supervision
 ultralytics
